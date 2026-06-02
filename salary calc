@@ -1,0 +1,6 @@
+a=float(input("Enter your salary:"))
+b=int(input("Enter no/of days absent:"))
+if b<=2:
+    print("Salary=",a)
+else:
+    print("Salary=",(a-((b-2)*500)))

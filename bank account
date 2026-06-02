@@ -1,0 +1,20 @@
+a=int(input("Enter the initial amt:"))
+print("1.deposit")
+print("2.withdraw")
+c=int(input("Enter your choice:"))
+if c==1:
+    d=int(input("Enter the amt to be deposited:"))
+    if d>100:
+        balance=a+d
+        print("Deposited amt=",balance)
+    else:
+        print("Your amt is not required for deposit")
+elif c==2:
+    e=int(input("Enter the amt to be withdrawed:"))
+    balance=a-e
+    if balance>=1000:
+        print("withdraed amt=",balance)
+    else:
+        print("Your amt balance should be atleast 1000,so withdraw accordingly")
+else:
+    print("Invalid choice")
